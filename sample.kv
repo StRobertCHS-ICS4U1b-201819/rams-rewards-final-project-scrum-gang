@@ -20,6 +20,7 @@ SampBoxLayout:
 
             TabbedPanel:
                 do_default_tab: False
+                tab_width: 450
 
                 TabbedPanelItem:
                     text: "1 RAMS REWARDS POINT"
@@ -32,10 +33,10 @@ SampBoxLayout:
                             group: "Activities"
                             value: root.act1
                             size_hint_y: .25
-                            size_hint_x: 1.2
+                            size_hint_x: 1.0
 
                         CustLabel:
-                            text: "Activity 1"
+                            text: "RETURNING LOST BELONGINGS"
                             size_hint_y: .15
 
                         CheckBox:
@@ -43,8 +44,9 @@ SampBoxLayout:
                             value: root.act2
                             size_hint_y: .05
 
+
                         CustLabel:
-                            text: "Activity 2"
+                            text: "RECYCLING"
                             size_hint_y: .15
 
                         CheckBox:
@@ -53,17 +55,76 @@ SampBoxLayout:
                             size_hint_y: .05
 
                         CustLabel:
-                            text: "Activity 3"
+                            text: "STAYING IN UNIFORM"
                             size_hint_y: .15
 
 
                 TabbedPanelItem:
                     text: "2 RAMS REWARD POINTS"
-                    Label:
-                        text: "Content of Second point"
+                    BoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: .55
+
+                        CheckBox:
+                            group: "Activities"
+                            value: root.act1
+                            size_hint_y: .25
+                            size_hint_x: 1.0
+
+                        CustLabel:
+                            text: "SETUP ASSEMBLIES"
+                            size_hint_y: .15
+
+                        CheckBox:
+                            group: "Activities"
+                            value: root.act2
+                            size_hint_y: .05
+
+                        CustLabel:
+                            text: "KEEP CLASROOM CLEAN"
+                            size_hint_y: .15
+
+                        CheckBox:
+                            group: "Activities"
+                            value: root.act3
+                            size_hint_y: .05
+
+                        CustLabel:
+                            text: "HELPING TEACHERS"
+                            size_hint_y: .15
+
+
 
                 TabbedPanelItem:
                     text: "3 RAMS REWARD POINTS"
-                    Label:
-                        text: "Content of Third point"
+                    BoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: .55
 
+                        CheckBox:
+                            group: "Activities"
+                            value: root.act1
+                            size_hint_y: .25
+                            size_hint_x: 1.0
+
+                        CustLabel:
+                            text: "VOLUNTEER AT MASS"
+                            size_hint_y: .15
+
+                        CheckBox:
+                            group: "Activities"
+                            value: root.act2
+                            size_hint_y: .05
+
+                        CustLabel:
+                            text: "PARTICIPATE IN SPIRIT DAYS"
+                            size_hint_y: .15
+
+                        CheckBox:
+                            group: "Activities"
+                            value: root.act3
+                            size_hint_y: .05
+
+                        CustLabel:
+                            text: "CLEANING CAFETERIA"
+                            size_hint_y: .15
